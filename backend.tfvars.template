@@ -1,0 +1,13 @@
+/*
+  Filename: backend.tfvars
+  Synopsis: Terraform backend variables for build-REDACTED environment module
+  Description: Variables that should rarely change for recurring executions against the build-REDACTED vpc
+  Comments: N/A
+*/
+
+region = "REDACTED"                                    # AWS region
+bucket = "YOUR AWS S3 BUCKET NAME"                          # AWS S3 bucket to store terraform backend
+dynamodb_table = "YOUR AWS DYNAMODB TABLE NAME"             # AWS DynamoDB table to store lock for terraform backend statefile
+key = "YOUR PATH TO STORE .tfstate FILE IN S3"              # The path within the S3 bucket to store backend statefile for this terraform configuration
+git_name = ""                                               # Git user allowed to clone the repositories. Used for Userdata Bootstrap
+git_token = ""                                              # Git token used to clone the repositories. Used for Userdata Bootstrap

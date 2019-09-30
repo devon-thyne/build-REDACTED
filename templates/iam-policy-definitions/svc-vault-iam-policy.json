@@ -1,0 +1,26 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "",
+            "Effect": "Allow",
+            "Action": [
+                "sts:GetFederationToken",
+		"sts:DecodeAuthorizationMessage",
+		"sts:GetCallerIdentity",
+                "iam:SimulatePrincipalPolicy",
+                "iam:GetRole",
+                "iam:GetInstanceProfile",
+                "ec2:Describe*"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Sid": "",
+            "Effect": "Allow",
+            "Action": "sts:AssumeRole",
+            "Resource": "arn:aws-us-gov:iam::REDACTED:*"
+        }
+    ]
+}
+

@@ -1,0 +1,11 @@
+/*
+  Filename: terraform.tfvars
+  Synopsis: Terraform input variables for build-REDACTED environment module
+  Description: Variables that often change due to operator execution for recurring executions against the build-REDACTED vpc
+  Comments: N/A
+*/
+
+access_key = ""                                         # Your AWS account access key
+secret_key = ""                                         # Your AWS account secret key
+git_name   = ""                                         # Your GitLab user allowed to clone the repositories; used for Userdata Bootstrap
+git_token  = ""                                         # Your GitLab deploy token used to clone the repositories; Used for Userdata Bootstrap
