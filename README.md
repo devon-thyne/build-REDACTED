@@ -1,7 +1,7 @@
-Build-REDACTED Module
-======================
+AWS Account Terraform Module
+=============================
 
-This space includes Terraform code to setup and configure Build-REDACTED including all necessary IAM resources.
+This space includes Terraform code to setup and configure AWS account including all necessary IAM resources.
 
 Dependencies
 ------------
